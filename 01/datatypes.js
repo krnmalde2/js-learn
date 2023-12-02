@@ -35,3 +35,31 @@ symbol = unique
 console.log(typeof(state))
 console.log(typeof temprature )
 
+console.log("--------------------------------------");
+
+// stack memory and heap memory
+console.log("Stack memory -> store primtive data type -> provides only copy of variable")
+console.log("heap memory -> store non-primtive data type -> provides refrence to original variable")
+
+let stringName = "stack memeory original"
+let anotherString = stringName
+anotherString = "stack memory copy"
+
+console.log(stringName);
+console.log(anotherString);
+
+console.log("Heap Example");
+
+const personOne = 
+{
+    name : "Raj",
+    gender : "Male"
+}
+
+const personTwo = personOne;
+
+personTwo.gender = "female"
+
+console.log(personOne);
+console.log(personTwo);
+
